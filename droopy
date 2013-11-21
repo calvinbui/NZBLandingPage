@@ -126,7 +126,7 @@ userinfo = '''
 </div>
 '''
 
-maintmpl = '''<html><head><title>%(maintitle)s</title><link rel="shortcut icon" href="/img/favicon.ico" />
+maintmpl = '''<html><head><title>%(maintitle)s</title><link rel="shortcut icon" href="img/favicon.ico" />
 ''' + style + '''
 <script language="JavaScript">
 function swap() {
@@ -204,8 +204,8 @@ errortmpl = '''
 ''' 
 
 linkurltmpl = '''<div id="linkurl" class="box">
-<a> %(discover)s
-</a></div>'''
+<a> %(discover)s 
+</a>  <a href=".."> Return Home</a></div>'''
 
 
 templates = {"main": maintmpl, "success": successtmpl, "error": errortmpl}
@@ -219,7 +219,7 @@ en = {"maintitle":       "Send a file",
       "errortitle":      "Problem",
       "problem":         "There has been a problem !",
       "retry":           "Retry.",
-      "discover":        "Upload files here and download them later!"}
+      "discover":        ""}
 
 translations = {"en": en}
 
@@ -242,7 +242,7 @@ class HTTPUploadHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     protocol_version = 'HTTP/1.0'
     form_field = 'upfile'
-    divpicture = '<div class="box"><img src="/img/Domo.gif"/></div>'
+    divpicture = '<div class="box"><img src="img/Domo.gif"/></div>'
 
 
     def html(self, page):

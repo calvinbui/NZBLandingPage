@@ -1,1 +1,1 @@
-C:\Python27\python.exe droopy --message "O HAI. Upload your files here. Love, Calvin." --picture --dl -d upload/
+C:\Python27\python.exe droopy --message "O HAI. Upload your files here. Love, Calvin." --dl -d upload/
