@@ -126,7 +126,7 @@ userinfo = '''
 </div>
 '''
 
-maintmpl = '''<html><head><title>%(maintitle)s</title><link rel="shortcut icon" href="../img/favicon.ico" />
+maintmpl = '''<html><head><title>%(maintitle)s</title><link rel="shortcut icon" href="/img/favicon.ico" />
 ''' + style + '''
 <script language="JavaScript">
 function swap() {
@@ -242,7 +242,7 @@ class HTTPUploadHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     protocol_version = 'HTTP/1.0'
     form_field = 'upfile'
-    divpicture = '<div class="box"><img src="../img/Domo.gif"/></div>'
+    divpicture = '<div class="box"><img src="/img/Domo.gif"/></div>'
 
 
     def html(self, page):
