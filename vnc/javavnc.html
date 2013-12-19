@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <HTML>
   <HEAD>
-      <TITLE>Java VNC to Calvin's Server</TITLE>
-      <link rel="shortcut icon" href="../img/favicon.ico" />
+      <title>Calvin's Server</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
   </HEAD>
   <BODY>
+    <div id="wrap">
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Calvin's Server</a>
+            </div>
+            <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="..">Return Home</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class='col-md-4 column'>
+         <a href="calvinservervnc.vnc" download="Calvin's Server VNC.vnc">
+         <button type="button" class="btn btn-primary btn-lg btn-block">VNC File</button>
+         </a>
+        </div>
+        <div class='col-md-4 column'>
+        <button type="button" class="btn btn-warning btn-lg btn-block" onclick="location.href='javavnc.html';">Java VNC</button>
+        </div>
+        <div class='col-md-4 column'>
+        <a href="calvinserverRDC.lnk" download="calvinserverRDC.lnk">
+        <button type="button" class="btn btn-danger btn-lg btn-block">Windows RDC</button>
+        </a>
+        </div>
+        </div>
+    </div>
     <object type="application/x-java-applet" width=1 height=1>
       <param name="archive" value="tightvnc-jviewer.jar">
       <param name="code" value="com.glavsoft.viewer.Viewer">  
       <PARAM name="PORT" value="5900">
       <PARAM name="OpenNewWindow" value="YES">
-        Java failed to load! Install it brah! Alternatively, download TightVNC below.
-    </object><BR>
-    <a href="http://www.tightvnc.com/">Download TightVNC here bitches</A>
+    </object>
   </BODY>
 </HTML>
