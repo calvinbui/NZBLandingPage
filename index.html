@@ -34,7 +34,7 @@
                     <a href="/headphones/" class="thumbnail"><img src="img/headphones.png" class="img-responsive"></a>
                 </div>
                 <div class='col-md-4 column'>
-                    <a href="/browse/" class="thumbnail"><img src="img/browse.png" class="img-responsive"></a>
+                    <a href="#" class="thumbnail"><img src="img/browse.png" class="img-responsive" onclick="check()"></a>
                 </div>
                 <div class='col-md-4 column'>
                     <a href="/uploads/" class="thumbnail"><img src="img/droopy.png" class="img-responsive"></a>
@@ -55,7 +55,15 @@
 <script>
 function check()
 {
-	var password = prompt("Password pls:") 
+	var password = prompt("Password pls:");
+	if (password = "trungthi")
+		{
+			window.location.href = "/browse/";
+		}
+	else
+		{
+			alert("Wrong password m8");
+		}
 }
 </script>
 </body>
